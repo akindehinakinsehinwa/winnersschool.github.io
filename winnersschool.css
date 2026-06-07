@@ -1,0 +1,1182 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* background-images section */
+.background-image {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(102, 96, 96, 0.8)),
+    url("/winnersimg/background\ image.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.background-image2 {
+  background:
+    linear-gradient(rgba(73, 5, 58, 0.9), rgba(73, 5, 58, 0.9)),
+    url("/winnersimg/Spelman\ College\ graduates.jpg");
+  width: 100%;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  animation-name: myAnimation3;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes myAnimation3 {
+  75% {
+    left: 0px;
+    top: 600px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* nav-section */
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: #dbd1d6;
+  background-attachment: fixed;
+  display: flex;
+  /* line-height: 4.4rem; */
+}
+nav .school-badge {
+  width: 80px;
+  height: 80px;
+  background-image: linear-gradient(), url(winnersimg/school-badge.jpg);
+  object-fit: cover;
+  background-color: transparent;
+}
+nav h1 {
+  font-size: 0.9rem;
+  font-family: Verdana, sans-serif;
+  font-weight: 20;
+  color: rgb(73, 5, 58);
+  float: left;
+  padding-left: 1rem;
+  padding-right: 27rem;
+  padding-top: 1.2rem;
+  letter-spacing: 5px;
+  border-left: solid goldenrod 0.5px;
+}
+nav h1 span {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: rgb(73, 5, 58);
+}
+
+nav ul {
+  float: right;
+  gap: 30rem;
+  padding-top: 1.85rem;
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(73, 5, 58);
+  padding: 0px 1rem;
+  display: block;
+}
+nav ul li a.active {
+  text-decoration: underline;
+}
+nav ul li ul {
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+
+nav ul li ul li {
+  background-color: rgb(73, 5, 58);
+  width: 300px;
+  padding: 10px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
+  line-height: 1.6;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav a {
+  color: white;
+  font-size: 17px;
+  /* transition: 0.5s; */
+  transition:
+    0.5s ease-out,
+    transform 0.5s ease-out;
+}
+
+nav ul li a:hover {
+  font-family: "Times New Roman", Times, serif;
+  /* color: white; */
+  cursor: pointer;
+  font-size: 1.2rem;
+  /* color: goldenrod; */
+}
+
+nav p {
+  transition: 0.5s;
+}
+
+nav ul li p:hover {
+  font-family: "Times New Roman", Times, serif;
+  color: goldenrod;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+nav .menu-icon {
+  /* float: right; */
+  padding-top: 1.85rem;
+  padding-left: 3rem;
+  display: none;
+}
+
+/* Button-section */
+.learn-more {
+  color: black;
+  border-radius: 20px;
+  border: none;
+  background-color: goldenrod;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 3rem;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.learn-more:hover {
+  background-color: white;
+  color: black;
+}
+
+@keyframes myAnimation {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 36rem;
+  }
+}
+.background-image2 .why-study {
+  width: 350px;
+  height: 45px;
+  padding: 0.5rem;
+  margin-left: 31rem;
+  margin-top: 5rem;
+  font-size: 16px;
+  font-weight: 400;
+  color: purple;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.background-image2 .why-study:hover {
+  background-color: goldenrod;
+  color: white;
+}
+
+/* all h tags */
+
+#h1 {
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 0.5rem;
+  position: relative;
+  animation-name: myAnimation2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+@keyframes myAnimation2 {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 23.5rem;
+  }
+}
+#h1 span {
+  color: goldenrod;
+}
+h2 {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 36px;
+  padding-top: 3rem;
+}
+h3 {
+  text-align: center;
+  padding-top: 17rem;
+  color: white;
+  font-size: 30px;
+}
+
+h4 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-style: oblique;
+  text-transform: lowercase;
+  font-weight: 100;
+}
+h5 {
+  padding-top: 2.5rem;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h6 {
+  color: white;
+  font-size: 18px;
+  padding-bottom: 1.5rem;
+}
+
+.box-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.box-1 {
+  width: 360px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.7;
+  position: relative;
+  animation-name: myAnimation3;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+
+.box-1 span {
+  font-size: 24px;
+  line-height: 2.5;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box-2 {
+  width: 360px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.7;
+  position: relative;
+  animation-name: myAnimation3;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+.box-2 span {
+  font-size: 24px;
+  line-height: 2.5;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box-3 {
+  width: 360px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.7;
+  position: relative;
+  animation-name: myAnimation3;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+
+.box-3 span {
+  font-size: 24px;
+  line-height: 2.5;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box-wrapper2 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.box-4 {
+  width: 360px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.7;
+  position: relative;
+  animation-name: myAnimation3;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+
+.box-4 span {
+  font-size: 24px;
+  line-height: 2.5;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box-5 {
+  width: 360px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.7;
+  position: relative;
+  animation-name: myAnimation3;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+
+.box-5 span {
+  font-size: 24px;
+  line-height: 2.5;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box-6 {
+  width: 360px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.7;
+  position: relative;
+  animation-name: myAnimation3;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+
+.box-6 span {
+  font-size: 24px;
+  line-height: 2.5;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* footer-section */
+
+.footer {
+  width: 100%;
+  height: 70vh;
+  background-color: #20232e;
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 9rem;
+  padding-left: 4rem;
+  padding-top: 5.5rem;
+  gap: 2rem;
+}
+
+.footer .box1 ul li {
+  list-style: none;
+}
+.footer .box2 ul li {
+  list-style: none;
+}
+.footer .box3 ul li {
+  list-style: none;
+}
+.footer .box4 ul li {
+  list-style: none;
+}
+
+.footer .box1 a {
+  text-decoration: none;
+  line-height: 1.8;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #808183;
+  transition: 0.3s;
+}
+.footer .box1 p {
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #808183;
+}
+.footer .box2 a {
+  text-decoration: none;
+  line-height: 1.8;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #808183;
+  transition: 0.3s;
+}
+.footer .box3 a {
+  text-decoration: none;
+  line-height: 1.8;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #808183;
+  transition: 0.3s;
+}
+.footer .box4 a {
+  text-decoration: none;
+  line-height: 1.8;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #808183;
+  transition: 0.3s;
+}
+.footer .box1 a:hover {
+  color: goldenrod;
+  font-size: 14px;
+}
+.footer .box2 a:hover {
+  color: white;
+  font-size: 14px;
+}
+.footer .box3 a:hover {
+  color: white;
+  font-size: 14px;
+}
+.footer .box4 a:hover {
+  color: white;
+  font-size: 14px;
+}
+
+.footer-ext {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  background-color: #1b1d26;
+}
+.footer-ext p {
+  color: #aeb0b3;
+  padding-top: 2.5rem;
+  padding-left: 23rem;
+  font-size: 17px;
+}
+.footer-ext ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding-left: 18rem;
+  padding-top: 5.5rem;
+}
+.footer-ext ul li a {
+  transition: 0.5s;
+  color: white;
+}
+.footer-ext ul li a:hover {
+  color: goldenrod;
+}
+/* about-section */
+.about-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  margin-top: 2.2rem;
+  margin-bottom: 2.2rem;
+  gap: 3rem;
+}
+
+.founder-image {
+  width: 420px;
+  height: 85vh;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+.about-page {
+  width: 490px;
+  height: 85vh;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.about-page p {
+  color: black;
+  font-size: 19px;
+  line-height: 1.5;
+}
+.p2 {
+  display: none;
+}
+
+.about-page span {
+  font-size: 23px;
+  color: rgb(73, 5, 58);
+  font-weight: bold;
+  line-height: 2;
+}
+.about-page .span-2 {
+  display: none;
+}
+.read-more {
+  width: 350px;
+  height: 45px;
+  padding: 0.5rem;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  background-color: rgb(73, 5, 58);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.read-more:hover {
+  background-color: goldenrod;
+}
+.quick-links {
+  width: 400px;
+  height: 46.2vh;
+  margin-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+button {
+  padding: 0.7rem;
+  font-size: 17px;
+  border: none;
+  background-color: #dbd1d6;
+  color: rgb(73, 5, 58);
+  font-weight: 540;
+  transition: 0.5s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: goldenrod;
+  color: white;
+}
+@media (max-width: 700px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    height: 192vh;
+  }
+
+  .quick-links {
+    width: 670px;
+    height: 46.5vh;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+  .read-more {
+    width: 450px;
+    height: 45px;
+    padding: 0.5rem;
+    align-self: center;
+    margin-left: 6.5rem;
+    margin-top: 3rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(73, 5, 58);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .founder-image {
+    width: 670px;
+    height: 95vh;
+    object-fit: cover;
+    margin-top: 2rem;
+  }
+  .about-page {
+    align-self: center;
+    width: 630px;
+    margin-left: 0;
+  }
+  .about-page p {
+    display: none;
+    color: black;
+    font-size: 19px;
+    line-height: 1.5;
+  }
+  .about-page .p2 {
+    display: contents;
+    color: black;
+    font-size: 13.5px;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .about-page .span-2 {
+    display: contents;
+    font-size: 23px;
+    color: rgb(73, 5, 58);
+    font-weight: bold;
+    line-height: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .background-image2 {
+    width: 670px;
+    height: 500vh;
+  }
+  .box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-left: 9.5rem;
+  }
+  .box-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 9.5rem;
+  }
+  .background-image2 .why-study {
+    width: 450px;
+    height: 45px;
+    padding: 0.5rem;
+    margin-left: 6.5rem;
+    margin-top: 5rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: purple;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  nav {
+    width: 670px;
+    height: 80px;
+  }
+  nav .menu-icon {
+    display: flex;
+    margin-right: 20rem;
+    float: right;
+  }
+  nav .menu-icon:hover {
+    cursor: pointer;
+  }
+  nav ul {
+    display: none;
+  float: right;
+  gap: 30rem;
+  padding-top: 1.85rem;
+}
+  nav h1 {
+    padding-right: 20rem;
+  }
+  .background-image {
+    width: 670px;
+    height: 100vh;
+  }
+  .learn-more {
+    color: black;
+    border-radius: 20px;
+    border: none;
+    background-color: goldenrod;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 3rem;
+
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes myAnimation {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 15rem;
+    }
+  }
+  #h1 {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 0.5rem;
+    position: relative;
+    animation-name: myAnimation2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+  @keyframes myAnimation2 {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 5rem;
+    }
+  }
+  .vc-wrapper {
+    display: none;
+    width: 670px;
+    height: 300vh
+    ;
+  }
+  .vc-wrapper .vc-container {
+  width: 580px;
+  height:100px;
+  justify-self: center;
+  border-bottom: solid rgba(0, 0, 0, 0.3) 0.5px;
+}
+  .vc-container #vc-heading {
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(73, 5, 58);
+
+}
+.vc-container #vc-heading span {
+  font-size: 12px;
+  color: rgb(73, 5, 58);
+} 
+.vc-wrapper .vc-box {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 650px;
+  height: 200vh; 
+ 
+}
+.vc-wrapper .vc-box #vc-speech {
+  width: 500px;
+  height: 500px;
+  padding-top: 0.5rem;
+  margin-left: 4.5rem;
+}
+.vc-box #vc-speech p {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.vc-wrapper #vc-speech span {
+  font-size: 20px;
+  font-weight: 800;
+  color: #808183;
+}
+.vc-wrapper .vc-image {
+  width: 600px;
+  height: 70vh;
+  object-fit: cover;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+#video-container {
+  display: none;
+}
+.video-wrapper {
+   display: none;
+}
+#form-container {
+  display: flex;
+  flex-direction: column;
+  width: 670px;
+  height: 200vh; 
+  background-color: rgba(73, 5, 58, 0.9);
+}
+#form-container #form-wrapper {
+  width: 500px;
+  height: 300px;
+  justify-self: start;
+  background-color: #dbd1d6;
+}
+#form-container #form-wrapper h4 {
+  color: rgba(73, 5, 58, 0.9);
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 700;
+  padding-right: 9rem;
+  padding-bottom: 1rem;
+}
+#form-container #form-wrapper p {
+  color: rgba(73, 5, 58, 0.9);
+  font-style: normal;
+  font-weight: 100;
+  padding-left: 3rem;
+  font-size: 18px;
+  line-height: 1.8;
+}
+.input-wrapper input {
+  padding-top: 3rem;
+  width: 300px;
+  background: transparent;
+  border: none;
+  border-bottom: solid #808183 1px;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 17px;
+}
+.input-wrapper input:focus {
+  outline: none;
+  color: goldenrod;
+}
+.input-container {
+  display: flex;
+  gap: 1rem;
+}
+.input-wrapper {
+  padding-left: 3rem;
+}
+#form-container .form-wrapper .submit-btn {
+  /* float: right; */
+  border-radius: 25px;
+  margin-right: 3rem;
+  margin-top: 2.2rem;
+  width: 140px;
+  font-weight: 700;
+  height: 50px;
+  background-color: rgba(73, 5, 58, 0.9);
+  color: white;
+}
+
+#form-container #image-wrapper {
+  display: none;
+  width: 500px;
+  height: 400px;
+}
+#image-wrapper h2 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-right: 7rem;
+  text-align: left;
+}
+#image-wrapper p {
+  color: white;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2;
+}
+.orphan-img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+.donate-btn {
+  border-radius: 25px;
+  margin-right: 3rem;
+  margin-left: 1rem;
+  margin-top: 2.2rem;
+  width: 200px;
+  font-weight: 500;
+  height: 50px;
+  transition: ease-in-out 0.5s;
+}
+}
+
+/* whychoose-section */
+.box-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* vc-section */
+.vc-wrapper {
+width: 100%;
+height: 120vh;
+background-color: #808183;
+
+}
+.vc-container {
+  width: 85%;
+  height: 160px;
+  justify-self: center;
+  border-bottom: solid rgba(0, 0, 0, 0.3) 0.5px;
+}
+#vc-heading {
+  font-family: Verdana, sans-serif;
+  font-size: 47px;
+  font-weight: 700;
+  color: rgb(73, 5, 58);
+}
+#vc-heading span {
+  font-size: 20px;
+  color: rgb(73, 5, 58);
+  line-height: 4;
+}
+
+.vc-box {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 90vh;
+  background-color: rgb(235, 180, 223, 0.3);
+}
+
+#vc-speech {
+  width: 60%;
+  height: 500px;
+  margin-left: 13rem;
+}
+#vc-speech p {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.4;
+  padding-top: 3rem;
+  text-align: left;
+}
+#vc-speech span {
+  font-size: 20px;
+  font-weight: 800;
+  color: #808183;
+}
+.vc-image {
+  width: 360px;
+  height: 70vh;
+  object-fit: cover;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+/* tour-section */
+#video-container {
+  background:
+    linear-gradient(rgba(59, 58, 59, 0.7), rgba(56, 58, 59, 0.7)),
+    url("/winnersimg/campus-image.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#video-container P {
+  font-family: Verdana, sans-serif;
+  font-size: 65px;
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+}
+.video-wrapper {
+  justify-self: center;
+}
+
+/* form-section */
+#form-container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  height: 150vh;
+  gap: 2rem;
+  background-color: rgba(73, 5, 58, 0.9);
+}
+#form-wrapper {
+  width: 40%;
+  height: 130vh;
+  background-color: #dbd1d6;
+  align-content: center;
+  margin-left: 4rem;
+}
+#form-wrapper h4 {
+  color: rgba(73, 5, 58, 0.9);
+  font-style: normal;
+  font-size: 37px;
+  padding-right: 4.5rem;
+  padding-bottom: 1rem;
+}
+#form-wrapper p {
+  color: rgba(73, 5, 58, 0.9);
+  font-style: normal;
+  font-weight: 100;
+  padding-left: 3rem;
+  font-size: 20px;
+  line-height: 1.8;
+}
+.input-wrapper input {
+  padding-top: 3rem;
+  width: 300px;
+  background: transparent;
+  border: none;
+  border-bottom: solid #808183 1px;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 17px;
+}
+.input-wrapper input:focus {
+  outline: none;
+  color: goldenrod;
+}
+.input-container {
+  display: flex;
+  gap: 1rem;
+}
+.input-wrapper {
+  padding-left: 3rem;
+}
+.submit-btn {
+  float: right;
+  border-radius: 25px;
+  margin-right: 3rem;
+  margin-top: 2.2rem;
+  width: 140px;
+  font-weight: 700;
+  height: 50px;
+  background-color: rgba(73, 5, 58, 0.9);
+  color: white;
+}
+
+#image-wrapper {
+  width: 40%;
+  height: 130vh;
+}
+#image-wrapper h2 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-right: 7rem;
+  text-align: left;
+}
+#image-wrapper p {
+  color: white;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2;
+}
+.orphan-img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+.donate-btn {
+  border-radius: 25px;
+  margin-right: 3rem;
+  margin-left: 1rem;
+  margin-top: 2.2rem;
+  width: 200px;
+  font-weight: 500;
+  height: 50px;
+  transition: ease-in-out 0.5s;
+}
+.donate-btn:hover {
+  width: 205px;
+}
+/* statistics-section */
+.statistics-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  background-color: #dbd1d6;
+}
+.statistics-container h2 {
+  color: rgba(73, 5, 58, 0.9);
+  font-weight: 800;
+  padding-top: 5rem;
+}
+.statistics-container .statistics-wrapper {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.statistics-container .statistics-wrapper .box1 {
+  width: 260px;
+  height: 160px;
+  background-color: rgba(73, 5, 58, 0.9);
+}
+.statistics-container .statistics-wrapper p {
+  color: white;
+  font-size: 15px;
+  line-height: 1.7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding-top: 2rem;
+}
+.statistics-container .statistics-wrapper .box1 h3 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 2rem;
+}
+.statistics-container .statistics-wrapper .box2 {
+  width: 260px;
+  height: 160px;
+  background-color: rgba(73, 5, 58, 0.9);
+}
+.statistics-container .statistics-wrapper .box2 h3 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.statistics-container .statistics-wrapper .box3 {
+  width: 260px;
+  height: 160px;
+  background-color: rgba(73, 5, 58, 0.9);
+}
+.statistics-container .statistics-wrapper .box3 h3 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.statistics-container .statistics-wrapper .box4 {
+  width: 260px;
+  height: 160px;
+  background-color: rgba(73, 5, 58, 0.9);
+}
+.statistics-container .statistics-wrapper .box4 h3 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 2rem;
+}
